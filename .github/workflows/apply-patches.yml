@@ -41,4 +41,5 @@ jobs:
             -DLLVM_EXTERNAL_PROJECTS="llvm-spirv;opencl-clang" \
             -DLLVM_EXTERNAL_LLVM_SPIRV_SOURCE_DIR="${{ github.workspace }}/llvm-project/SPIRV-LLVM-Translator" \
             -DLLVM_EXTERNAL_OPENCL_CLANG_SOURCE_DIR="${{ github.workspace }}/llvm-project/opencl-clang" \
-            ${{ github.workspace }}/llvm-project/llvm
+            ${{ github.workspace }}/llvm-project/llvm \
+          cd ${{ github.workspace }}/llvm-project/SPIRV-LLVM-Translator && git status && git log -n 5
