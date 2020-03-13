@@ -26,7 +26,7 @@ jobs:
           repository: KhronosGroup/SPIRV-LLVM-Translator
           clean: false
           path: llvm-project/SPIRV-LLVM-Translator
-          ref: master # replace with particular release branch
+          ref: llvm_release_90 # replace with particular release branch
       - name: Checkout opencl-clang sources
         uses: actions/checkout@v2
         with:
